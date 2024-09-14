@@ -217,6 +217,30 @@ export const DATA = {
         "",
     },
     {
+      title: "MultiChain Wallet Verifcation",
+      href: "https://devfolio.co/projects/multichain-wallet-ownership-verification-b793",
+      dates: "February 2023 - August 2023",
+      active: true,
+      description:
+        "LionHack 2023, The idea was to make sure a single user could prove their ownership of different wallets on other ecosystems.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Axelar SDK",
+        "1st Place Axelar Network",
+        "2nd Place Ava Labs"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://devfolio.co/projects/multichain-wallet-ownership-verification-b793",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "Cardano Natives",
       href: "https://github.com/olafnub/cardano2",
       dates: "February 2023 - August 2023",
