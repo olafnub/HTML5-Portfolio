@@ -197,7 +197,7 @@ export const DATA = {
         "TailwindCSS",
         "Nginx",
         "Pm2",
-        "CoinGecko API",
+        "CryptoPanic API",
         "Discord API",
       ],
       links: [
@@ -262,6 +262,29 @@ export const DATA = {
           type: "Source",
           href: "https://github.com/olafnub/cardano2",
           icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Instagram Captions API",
+      href: "https://youtu.be/RI4d2TeTFws?si=m9EM3ZTzNWdkLDGJ",
+      dates: "February 2023 - August 2023",
+      active: true,
+      description:
+        "Helped local Photographer see a list of past client Instagram captions all on one page",
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Meta (Facebook) API"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://youtu.be/RI4d2TeTFws?si=m9EM3ZTzNWdkLDGJ",
+          icon: <Icons.youtube className="size-3" />,
         },
       ],
       image: "",
