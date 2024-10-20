@@ -44,7 +44,7 @@ export default function Chains() {
                 <p><Arrow /><b>What Game Theory Reveals About Life, The Universe, and Everything</b> and remember not to click on random links so the title is right there for you if you want to search it up on youtube</p>
                 <br></br>
                 <FlexCenter>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mScpHTIi-kM?si=SpdC0gvXPJfOgn3d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mScpHTIi-kM?si=SpdC0gvXPJfOgn3d" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </FlexCenter>
             </div>
         
