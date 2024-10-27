@@ -2,6 +2,7 @@
 import React, {useEffect, useState} from 'react'
 import Link from "next/link"
 import Image from "next/image"
+import "./chains.css"
 
 const FlexCenter: React.FC<{ children: React.ReactNode}> = ({ children }) => (
     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -11,10 +12,13 @@ const FlexCenter: React.FC<{ children: React.ReactNode}> = ({ children }) => (
 
 const Arrow = () => <span>➜</span>;
 
-const LinkItem: React.FC<{ href: string, text: string, extraInfo?: string }> = ({ href, text, extraInfo }) => (
-    <p>
-        <Arrow /><Link style={{textDecoration: "underline"}} href={href}>{text}</Link><span> {extraInfo}</span>
-    </p>
+const LinkItem: React.FC<{ href: string, text: string, extraInfo?: string, date: string }> = ({ href, text, extraInfo, date }) => (
+    <div className="link-item">
+        <p>
+            <Arrow /><Link style={{textDecoration: "underline"}} href={href}>{text}</Link><span> {extraInfo}  <span style={{color: "sienna"}}>{date}</span></span>
+        </p>
+        {/* <p>{date}</p> */}
+    </div>
 )
 
 export default function Chains() {
@@ -32,14 +36,12 @@ export default function Chains() {
     // hash is based on the text
 
     return (
-        <section id="main" style={{display: "flex", flexDirection: "column", gap: "48px"}}>
+        <section id="main" style={{display: "flex", flexDirection: "column", gap: "16px"}}>
 
             <FlexCenter>
                 <p style={{color: "#AA336A", fontWeight: "bolder"}}>List of videos and articles that I find interesting and helpful</p>
             </FlexCenter>
 
-            <LinkItem href="https://www.techtarget.com/whatis/definition/deep-Web" text="What is the Deep Web"/>
-            
             <div>
                 <p><Arrow /><b>What Game Theory Reveals About Life, The Universe, and Everything</b> and remember not to click on random links so the title is right there for you if you want to search it up on youtube</p>
                 <br></br>
@@ -47,12 +49,15 @@ export default function Chains() {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/mScpHTIi-kM?si=SpdC0gvXPJfOgn3d" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </FlexCenter>
             </div>
+
+            <LinkItem href="https://www.techtarget.com/whatis/definition/deep-Web" text="What is the Deep Web" date="Oct-4-2024"/ >
+            <LinkItem href="https://tree-trunks.notion.site/Israel-has-the-right-to-defend-itself-38e90b6209da4c59b40c9ad9cea02e60?pvs=4" text="Israel has the right to defend itself" date="Oct-27-2024"/>
         
-            <LinkItem href="https://medium.com/@li002488/guide-to-long-term-investing-what-is-compound-interest-index-funds-etfs-80ad46b91213" text="guide to long term investing — what is compound interest, an index fund & an etf?" extraInfo="For this one you can ignore the advice I gave above" />
+            <LinkItem href="https://medium.com/@li002488/guide-to-long-term-investing-what-is-compound-interest-index-funds-etfs-80ad46b91213" text="guide to long term investing — what is compound interest, an index fund & an etf?" extraInfo="For this one you can ignore the advice I gave above" date="May-13-2024" />
 
             <Image src="/chat.jpg" alt="chatgpt conversation" layout="responsive" width={500} height={600} />
             
-            <LinkItem href="https://www.youtube.com/watch?v=Y9KMkQwWXtY" text="How to trade memecoins @ UMN Blockchain" />
+            <LinkItem href="https://www.youtube.com/watch?v=Y9KMkQwWXtY" text="How to trade memecoins @ UMN Blockchain" date="Apr-17-2024" />
 
 
         </section>
