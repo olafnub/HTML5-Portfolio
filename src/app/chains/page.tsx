@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 import Link from "next/link"
 import "./chains.css"
 
-let modifiedCount = 7;
+let modifiedCount = 9;
 
 const FlexCenter: React.FC<{ children: React.ReactNode}> = ({ children }) => (
     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -42,6 +42,22 @@ interface LinkInfo {
 // Read Or Video
 
 const allLinks: LinkInfo[] = [
+    {
+        title: "footprintcalculator",
+        link: "https://www.footprintcalculator.org",
+        type: "Read",
+        dateUploaded: "Nov-27-2024",
+        extraInfo: `Reddit tells me to unplug devices that I no longer need to use / whenever I leave the house. 
+        Ex: Lamps, chargers, Wifi (also helps with keeping me off my phone when I get home -- but it's only day 2 of trying this)`,
+    },
+    {
+        title: "Artificial intelligence's thirst for electricity",
+        link: "https://www.npr.org/2024/07/10/nx-s1-5028558/artificial-intelligences-thirst-for-electricity",
+        type: "Read",
+        dateUploaded: "Nov-27-2024",
+        extraInfo: `"One query to ChatGPT uses approximately as much electricity as could light one lightbulb for about 20 minutes." Currently in an ethics class
+        so i'm in my climate learning. Btw google searches is around the same but a bit less. Though, this doesn't mean to not use AI or any browsers.`,
+    },
     {
         title: "How ta recycle",
         link: "https://www.minneapolismn.gov/resident-services/garbage-recycling-cleanup/recycling/accepted-recycling/",
