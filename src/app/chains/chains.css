@@ -6,3 +6,14 @@
 .link-item:hover {
     background-color: gainsboro;
 }
+span {
+    font-size: x-small;
+    color: sienna;
+}
+.arrow {
+    color: black;
+}
+.modifiedCount {
+    font-size: large;
+    
+}
