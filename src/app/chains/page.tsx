@@ -43,6 +43,13 @@ interface LinkInfo {
 
 const allLinks: LinkInfo[] = [
     {
+        title: "Doom, Glory, or both?",
+        link: "https://medium.com/@li002488/doom-glory-or-both-9cd2fbbfc2f5",
+        type: "Read",
+        dateUploaded: "Nov-27-2024",
+        extraInfo: `After Trump\’s winning election and his promise to withdraw from the Paris agreement, is the progress towards climate change doomed? COP 29`,
+    },
+    {
         title: "footprintcalculator",
         link: "https://www.footprintcalculator.org",
         type: "Read",
