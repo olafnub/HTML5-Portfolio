@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react'
 import Link from "next/link"
 import "./chains.css"
 
-let modifiedCount = 9;
+let modifiedCount = 10;
 
 const FlexCenter: React.FC<{ children: React.ReactNode}> = ({ children }) => (
     <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
@@ -42,6 +42,48 @@ interface LinkInfo {
 // Read Or Video
 
 const allLinks: LinkInfo[] = [
+    {
+        title: "Bypass paywalls",
+        link: "https://www.removepaywall.com/",
+        type: "Read",
+        dateUploaded: "Feb-9-2025",
+        extraInfo: `Helps with medium articles, etc...`,
+    },
+    {
+        title: "Check for Media Bias",
+        link: "https://ground.news/",
+        type: "Read",
+        dateUploaded: "Feb-9-2025",
+        extraInfo: ``,
+    },
+    {
+        title: "BlogScroll",
+        link: "https://blogscroll.com/",
+        type: "Read",
+        dateUploaded: "Feb-9-2025",
+        extraInfo: `List of community portfolios, it's nice to look through other people's portfolios & find the blog or share section that they have. Usually can learn something since it's most likely topics they're interested in and can share their expertise in`,
+    },
+    {
+        title: "How to study",
+        link: "https://cse.buffalo.edu/~rapaport/howtostudy.html",
+        type: "Read",
+        dateUploaded: "Feb-9-2025",
+        extraInfo: `said I was going to apply this spring semester...`,
+    },
+    {
+        title: "Why it's almost impossible to make blue LED",
+        link: "https://www.youtube.com/watch?v=AF8d72mA41M",
+        type: "Video",
+        dateUploaded: "Feb-9-2025",
+        extraInfo: ``,
+    },
+    {
+        title: "How to know when to stop",
+        link: "https://www.lennysnewsletter.com/p/how-to-know-when-to-stop",
+        type: "Read",
+        dateUploaded: "Feb-9-2025",
+        extraInfo: `has a cool video showing how stress and disease is correlated`,
+    },
     {
         title: "Doom, Glory, or both?",
         link: "https://medium.com/@li002488/doom-glory-or-both-9cd2fbbfc2f5",

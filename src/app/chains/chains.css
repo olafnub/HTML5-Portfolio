@@ -1,7 +1,7 @@
 .link-item {
     display: flex;
     justify-content: space-between;
-    padding: 4px;
+    padding: 16px;
 }
 .link-item:hover {
     background-color: gainsboro;
